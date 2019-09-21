@@ -1,0 +1,98 @@
+.contact-form h1{
+	background: #f7497d;
+}
+
+.frm-box{
+	background:#fff;
+	text-align: center;
+	position:relative;
+	border:1px solid rgba(0,0,0,0.1);
+	border:none;
+	box-sizing:border-box;
+	margin: 24% 0 0 50%;
+	padding:40px;
+	width: 400px;
+	box-shadow:0 5px 10px rgba(0,0,0,.2);
+	transform:translate(-50%,-50%);
+}
+
+.frm-box h2{
+	margin:0 0 40px;
+	padding:0;
+	color:orange;
+	text-transform:uppercase;
+}
+
+.frm-box label{
+	color: darkgrey;
+}
+
+.frm-box input{
+	padding:10px 0;
+	margin-bottom:30px;
+}
+
+.frm-box textarea{
+	height:80px;
+	padding:10px 0;
+	margin-bottom:40px;
+}
+
+.frm-box input,
+.frm-box textarea{
+	width:100%;
+	box-sizing:border-box;
+	box-shadow:none;
+	outline:none;
+	border: none;
+	border-bottom:2px solid #999 ; 	
+}
+
+.frm-box textarea{
+	margin-bottom:20px;
+}
+
+.frm-box input[type="submit"]{
+	
+	border-bottom:none;
+	cursor:pointer;
+	background:orange;
+	color:#fff;
+	text-transform:uppercase;
+	opacity:0.7;
+}
+
+.frm-box input[type="submit"]:hover{
+	opacity:1;
+}
+
+.frm-box form div{
+	position:relative;
+}
+
+.frm-box form div label{
+	position:absolute;
+	top:10px;
+	left:0;
+	transition:.5s;
+	pointer-events:none;  
+}
+
+/*push up the placeholder*/
+.frm-box input:focus ~ label,
+.frm-box textarea:focus ~ label,
+.frm-box input:valid ~ label,
+.frm-box textarea:valid ~ label{
+	top:-12px;
+	left:0;
+	color:black;
+	font-size:12px;
+	font-weight:bold;
+}
+
+.frm-box input:focus,
+.frm-box textarea:focus,
+.frm-box input:valid,
+.frm-box textarea:valid{
+	border-bottom:2px solid orange;
+}
